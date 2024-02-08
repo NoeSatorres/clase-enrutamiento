@@ -1,11 +1,18 @@
-<nav>
-  <ul>
-    <li>
-      <a routerLink="/inicio" routerLinkActive="active">Inicio</a>
+<nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
 
-    </li>
-    <li>
-      <a routerLink="/contacto" routerLinkActive="active">Contacto</a>
-    </li>
-  </ul>
+  <div class="container-fluid">
+    <a class="navbar-brand" aria-current="page" routerLink="/inicio">Inicio</a>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" routerLink="/contacto">Contacto</a>
+        </li>
+      </ul>
+    </div>
+
+  </div>
 </nav>
+<br>
+  
+<router-outlet></router-outlet>
